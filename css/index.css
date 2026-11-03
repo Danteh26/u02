@@ -1,0 +1,53 @@
+body {
+    max-width: 600px;
+    margin: auto;
+}
+
+main h1 {
+    width: 50%;
+    margin: 50px 0px;
+}
+
+h1 strong {
+    background: linear-gradient(270deg, color-mix(in srgb, var(--gradient-color-1) 50%, var(--gradient-color-2) 50%), var(--gradient-color-2));
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+main img {
+    border: 5px solid transparent;
+    border-radius: 50%;
+    width: 50%;
+    background:linear-gradient(white, white) padding-box, linear-gradient(180deg, var(--gradient-color-1), var(--gradient-color-2)) border-box;
+}
+
+@media (min-width: 1200px) {
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+
+    main img {
+        width: 460px;
+        height: 460px;
+        margin: auto;
+    }
+    
+    main h1 {
+        font-size: 46px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 1200px) {
+    nav {
+        margin-bottom: 100px;
+    }
+
+    .logo-links {
+        margin-top: 20px;
+    }
+
+    footer {
+        display: none;
+    }
+}

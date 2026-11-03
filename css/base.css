@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --gradient-color-1: #E70FAA;
+    --gradient-color-2: #00C0FD;
+    --light-Content: #a7a7a7;
+    --Solid-Heading-Dark-mode: #cccccc;
+    --Solid-Heading: #42446E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 600px;
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    font-family: "Poppins", sans-serif;
+    color: #666666;
+}
+
+h1, h2 {
+    color: #000;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+
+header img {
+    width: 32px;
+    height: 32px;
+    margin: auto 0;
+}
+
+.main-logo {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.main-logo h1 {
+    width: 100%;
+    background: linear-gradient(270deg, var(--gradient-color-1), var(--gradient-color-2));
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bold;
+    text-align: center;
+}
+
+.main-logo-007 {
+    font-size: 40px;
+}
+
+.main-logo-name {
+    font-size: large;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80px;
+}
+.page-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+.page-links a {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.logo-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 100px;
+}
+
+.logo-links a img {
+    width: 40px;
+    height: 40;
+}
+
+
+main {
+    flex: 1;
+    margin-top: 50px;
+}
+
+footer {
+    margin-top: 25px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: auto;
+}
+
+.love, .coffee {
+    background: linear-gradient(270deg, var(--gradient-color-1), color-mix(in srgb, var(--gradient-color-1) 50%, var(--gradient-color-2) 50%), var(--gradient-color-2));
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+@media (min-width: 1200px) {
+    body {
+        min-width: 1200px;
+        height: 1000px;
+        display: grid;
+        grid-template-areas:
+        "head nav nav"
+        "main main main"
+        "foot foot foot";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 60px 1fr 60px;
+    }
+
+    header {
+        grid-area: head;
+        height: 60px;
+    }
+
+    header img  {
+        display: none;
+        justify-content: space-evenly;
+    }
+
+    nav {
+        margin-top: 40px;
+        flex-direction: row;
+        grid-area: nav;
+    }
+
+    .page-links {
+        flex-direction: row;
+    }
+
+    .page-links a {
+        margin-right: 50px;
+        font-size: 16px;
+        color: #666666;
+    }
+
+    .logo-links {
+        gap: 25px;
+    }
+
+    main {
+        grid-area: main;
+    }
+    
+    h1 {
+        color: var(--Solid-Heading);
+    }
+
+    h2 {
+        margin-top: 100px;
+        font-size: 40px;
+        color: var(--Solid-Heading);
+    }
+
+    footer {
+        grid-area: foot;
+        color: var(--light-Content);
+    }
+
+    .name-footer {
+        color: color-mix(in srgb, var(--gradient-color-1) 60%, var(--gradient-color-2));
+    }
+
+    .love {
+        color: color-mix(in srgb, var(--gradient-color-1) 80%, var(--gradient-color-2));
+        background: none;
+        -webkit-text-fill-color: currentcolor;
+    }
+
+    .coffee {
+        color: var(--gradient-color-1);
+        background: none;
+        -webkit-text-fill-color: currentcolor;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: dark;
+    }
+
+    h1 {
+        color: var(--Solid-Heading-Dark-mode);
+    }
+
+    h2 {
+        color: var(--Solid-Heading-Dark-mode);
+    }
+
+    h3 {
+        color: var(--light-Content);
+    }
+
+    p {
+        color: var(--Solid-Heading-Dark-mode);
+    }
+
+    .page-links a {
+        color: var(--light-Content);
+    }
+
+    span {
+        color: var(--Solid-Heading-Dark-mode);
+    }
+
+    .project-card {
+        background-color: #363636;
+    }
+
+    .project-links a {
+        color: #fff;
+    }
+
+}

@@ -1,0 +1,51 @@
+h2 {
+    margin: 50px 0 30px 0;
+}
+
+.experience-header, .education-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.introduction p {
+    font-size: 20px;
+}
+
+.experience-item, .education-item {
+    border-bottom: 2px solid #EBEAED;
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+}
+
+.experience-type {
+    background-color: #D7FFE0;
+    color: #018C0F;
+    padding: 5px 10px ;
+    border-radius: 25px;
+}
+
+.details {
+    margin: 20px 0;
+}
+
+.company, .institution {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media (min-width: 1200px) {
+    body {
+        grid-template-areas:
+        "head nav nav"
+        "main main ."
+        "foot foot foot";
+    }
+}
+
+@media (max-width: 1200px) {
+    nav {
+        display: none;
+    }
+}
