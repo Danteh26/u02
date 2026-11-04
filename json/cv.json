@@ -1,0 +1,45 @@
+{
+  "workExperience": [
+    {
+      "title": "Arbete 1",
+      "type": "Heltid",
+      "company": "Företag 1",
+      "date": "Januari 2023 – December 2023",
+      "location": "Stockholm"
+    },
+    {
+      "title": "Arbete 2",
+      "type": "Praktik",
+      "company": "Företag 2",
+      "date": "Juni 2022 – Augusti 2022",
+      "location": "Stockholm"
+    },
+    {
+      "title": "Arbete 3",
+      "type": "Deltid",
+      "company": "Företag 3",
+      "date": "Januari 2021 – Maj 2022",
+      "location": "Distans"
+    }
+  ],
+  "education": [
+    {
+      "title": "Utbildning 1",
+      "school": "Skola 1",
+      "date": "Augusti 2023 – Juni 2024",
+      "location": "Stockholm"
+    },
+    {
+      "title": "Utbildning 2",
+      "school": "Skola 2",
+      "date": "Augusti 2021 – Juni 2023",
+      "location": "Stockholm"
+    },
+    {
+      "title": "Utbildning 3",
+      "school": "Skola 3",
+      "date": "Augusti 2020 – Juni 2021",
+      "location": "Distans"
+    }
+  ]
+}
