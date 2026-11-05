@@ -1,45 +1,45 @@
 {
   "workExperience": [
     {
-      "title": "Arbete 1",
-      "type": "Heltid",
-      "company": "Företag 1",
-      "date": "Januari 2023 – December 2023",
+      "title": "Job 1",
+      "type": "Full-time",
+      "company": "Company 1",
+      "date": "January 2023 – December 2023",
       "location": "Stockholm"
     },
     {
-      "title": "Arbete 2",
-      "type": "Praktik",
-      "company": "Företag 2",
-      "date": "Juni 2022 – Augusti 2022",
+      "title": "Job 2",
+      "type": "Internship",
+      "company": "Company 2",
+      "date": "June 2022 – August 2022",
       "location": "Stockholm"
     },
     {
-      "title": "Arbete 3",
-      "type": "Deltid",
-      "company": "Företag 3",
-      "date": "Januari 2021 – Maj 2022",
-      "location": "Distans"
+      "title": "Job 3",
+      "type": "Part-time",
+      "company": "Company 3",
+      "date": "January 2021 – May 2022",
+      "location": "Remote"
     }
   ],
   "education": [
     {
-      "title": "Utbildning 1",
-      "school": "Skola 1",
-      "date": "Augusti 2023 – Juni 2024",
+      "title": "Education 1",
+      "school": "School 1",
+      "date": "August 2023 – June 2024",
       "location": "Stockholm"
     },
     {
-      "title": "Utbildning 2",
-      "school": "Skola 2",
-      "date": "Augusti 2021 – Juni 2023",
+      "title": "Education 2",
+      "school": "School 2",
+      "date": "August 2021 – June 2023",
       "location": "Stockholm"
     },
     {
-      "title": "Utbildning 3",
-      "school": "Skola 3",
-      "date": "Augusti 2020 – Juni 2021",
-      "location": "Distans"
+      "title": "Education 3",
+      "school": "School 3",
+      "date": "August 2020 – June 2021",
+      "location": "Remote"
     }
   ]
 }
