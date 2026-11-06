@@ -54,7 +54,7 @@ function createProjects(repositories) {
         const content = document.createElement("div");
         content.classList.add("project-content");
 
-        const title = document.createElement("h3");
+        const title = document.createElement("h2");
         title.textContent = repo.name;
 
         const description = document.createElement("p");

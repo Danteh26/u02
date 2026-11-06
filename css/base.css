@@ -49,7 +49,7 @@ header img {
     text-decoration: none;
 }
 
-.main-logo h1 {
+.main-logo p {
     width: 100%;
     background: linear-gradient(270deg, var(--gradient-color-1), var(--gradient-color-2));
     -webkit-text-fill-color: transparent;
@@ -174,7 +174,7 @@ footer {
         color: var(--Solid-Heading);
     }
 
-    h2 {
+    h1 {
         margin-top: 100px;
         font-size: 40px;
         color: var(--Solid-Heading);
