@@ -53,13 +53,6 @@
     }
 }
 
-@media (max-width: 1200px) {
-    nav {
-        display: none;
-    }
-}
-
-
 @media (prefers-color-scheme: dark) {
     .dark-mode-img {
         display: block;

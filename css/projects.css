@@ -58,15 +58,8 @@ h1 {
     }
 }
 
-@media (max-width: 1200px) {
-    nav {
-        display: none;
+@media (prefers-color-scheme: dark) {
+    .project-links a {
+        color: #fff;
     }
 }
-
-    @media (prefers-color-scheme: dark) {
-        .project-links a {
-            color: #fff;
-        }
-
-    }

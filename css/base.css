@@ -16,7 +16,7 @@
 
 body {
     max-width: 600px;
-    height: 1200px;
+    min-height: 1200px;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -26,21 +26,6 @@ body {
 
 h1, h2 {
     color: #000;
-}
-
-header {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 40px;
-}
-
-
-header img {
-    width: 32px;
-    height: 32px;
-    margin: auto 0;
 }
 
 .main-logo {
@@ -64,6 +49,46 @@ header img {
 
 .main-logo-name {
     font-size: large;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-top: 40px;
+}
+
+.mobile-menu {
+    width: 100%;
+}
+
+.mobile-menu summary {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    cursor: pointer;
+    list-style: none;
+}
+
+.mobile-menu summary img {
+    display: block;
+    width: 32px;
+    height: 32px;
+}
+
+.mobile-menu nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.mobile-menu[open] nav {
+    display: flex;
 }
 
 nav {
@@ -104,7 +129,6 @@ nav a {
     height: 40;
 }
 
-
 main {
     flex: 1;
     margin-top: 50px;
@@ -134,6 +158,10 @@ footer {
         "foot foot foot";
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 60px 1fr 60px;
+    }
+
+    .mobile-menu {
+        display: none;
     }
 
     header {
@@ -199,6 +227,12 @@ footer {
         color: var(--gradient-color-1);
         background: none;
         -webkit-text-fill-color: currentcolor;
+    }
+}
+
+@media (max-width: 1200px) {
+    .desktop-nav {
+        display: none;
     }
 }
 
