@@ -49,10 +49,3 @@ h2 {
         color: var(--Solid-Heading);
     }
 }
-
-@media (prefers-color-scheme: dark) {
-    h2 {
-        color: var(--Solid-Heading-Dark-mode);
-    }
-
-}

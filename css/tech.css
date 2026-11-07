@@ -27,7 +27,7 @@
 }
 
 @media (min-width: 1200px) {
-    @media (prefers-color-scheme: dark) {
+    :root.dark-mode {
         .dark-mode-extra-img {
             display: block;
         }
@@ -53,13 +53,13 @@
     }
 }
 
-@media (prefers-color-scheme: dark) {
+:root.dark-mode {
     .dark-mode-img {
         display: block;
     }
-
+}
+:root.dark-mode {
     .light-mode-img {
         display: none;
     }
-
 }

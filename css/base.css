@@ -147,6 +147,24 @@ footer {
     background-clip: text;
 }
 
+.theme-toggle {
+    background-color: #666666;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 50px;
+}
+
+:root.dark-mode .theme-toggle {
+    background-color: var(--light-Content);
+    color: #000;
+}
+
 @media (min-width: 1200px) {
     body {
         min-width: 1200px;
@@ -236,41 +254,38 @@ footer {
     }
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        color-scheme: dark;
-    }
+:root.dark-mode {
+    color-scheme: dark;
+}
 
-    h1 {
-        color: var(--Solid-Heading-Dark-mode);
-    }
+:root.dark-mode h1 {
+    color: var(--Solid-Heading-Dark-mode);
+}
 
-    h2 {
-        color: var(--Solid-Heading-Dark-mode);
-    }
+:root.dark-mode h2 {
+    color: var(--Solid-Heading-Dark-mode);
+}
 
-    h3 {
-        color: var(--light-Content);
-    }
+:root.dark-mode h3 {
+    color: var(--light-Content);
+}
 
-    p {
-        color: var(--Solid-Heading-Dark-mode);
-    }
+:root.dark-mode p {
+    color: var(--Solid-Heading-Dark-mode);
+}
 
-    .page-links a {
-        color: var(--light-Content);
-    }
+:root.dark-mode .page-links a {
+    color: var(--light-Content);
+}
 
-    span {
-        color: var(--Solid-Heading-Dark-mode);
-    }
+:root.dark-mode span {
+    color: var(--Solid-Heading-Dark-mode);
+}
 
-    .project-card {
-        background-color: #363636;
-    }
+:root.dark-mode .project-card {
+    background-color: #363636;
+}
 
-    .project-links a {
-        color: #fff;
-    }
-
+:root.dark-mode .project-links a {
+    color: #fff;
 }
