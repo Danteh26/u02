@@ -278,10 +278,6 @@ footer {
     color: var(--light-Content);
 }
 
-:root.dark-mode span {
-    color: var(--Solid-Heading-Dark-mode);
-}
-
 :root.dark-mode .project-card {
     background-color: #363636;
 }

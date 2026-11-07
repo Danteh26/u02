@@ -10,7 +10,7 @@ async function fetchData() {
 
         renderWorkExperience(data.workExperience);
         renderEducation(data.education);
-
+        makeToggleButtons();
     } catch (error) {
         console.error("Fetch error:", error);
     }
@@ -18,10 +18,10 @@ async function fetchData() {
 
 
 function renderWorkExperience(workExperience) {
-    const section = document.querySelector(".work-experience");
-    const heading = section.querySelector("h2");
+    const section = document.querySelector(".education");
+    const header = section.querySelector(".section-header");
 
-    section.replaceChildren(heading);
+    section.replaceChildren(header);
 
     workExperience.forEach(work => {
         const article = document.createElement("article");
@@ -57,9 +57,9 @@ function renderWorkExperience(workExperience) {
 
 function renderEducation(educationList) {
     const section = document.querySelector(".education");
-    const heading = section.querySelector("h2");
+    const header = section.querySelector(".section-header");
 
-    section.replaceChildren(heading);
+    section.replaceChildren(header);
 
     educationList.forEach(education => {
         const article = document.createElement("article");
@@ -92,3 +92,27 @@ function renderEducation(educationList) {
     });
 }
 fetchData();
+
+function makeToggleButtons() {
+    const sections = document.querySelectorAll(".work-experience, .education");
+
+    sections.forEach(function(section) {
+        const button = section.querySelector(".toggle-btn");
+
+        button.addEventListener("click", function() {
+            const articles = section.querySelectorAll("article");
+
+            const isHidden = articles[0].hidden;
+
+            articles.forEach(function(article) {
+                article.hidden = !isHidden;
+            });
+
+            if (isHidden) {
+                button.textContent = "Hide";
+            } else {
+                button.textContent = "Show";
+            }
+        });
+    });
+}
