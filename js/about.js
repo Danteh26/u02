@@ -18,7 +18,7 @@ async function fetchData() {
 
 
 function renderWorkExperience(workExperience) {
-    const section = document.querySelector(".education");
+    const section = document.querySelector(".work-experience");
     const header = section.querySelector(".section-header");
 
     section.replaceChildren(header);
