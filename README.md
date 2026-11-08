@@ -1,1 +1,19 @@
 # u02
+
+Länk till sidan: https://design-u02.netlify.app/about
+
+När sidan laddas gör Javascript ett anrop till githubs API med fetch. Anropet innehåller en URL som pekar på mitt github konto och ber om information om mina publika repositories. Github skickar tillbaka ett svar i json format som har informationen om mina repositories till exempel namn, beskrivning, länk till netlify. Jag använder await response.json för att omvandla svaret till Javascript data som jag kan då använda. Sen använder jag informationen för att skapa html elementen med Javascript, likadant som det såg ut med bara html. Medans den fetchar så visar den en laddningstext.
+
+Den största skillnaden är var informationen kommer ifrån. Experience och education delen hämtas från en json-fil i projektet. Där har jag kontroll över vilken information som finns och hur den är strukturerad. Jag använder fetch för att läsa filen och sedan skickar jag informationen vidare till renderWorkExperience och renderEducation funktionerna. Mina projekt hämtas dock från githubs API. Den informationen kommer alltså externt vilket gör det viktigt att jag hanterar när det går fel.
+
+Jag använder Javascript för att skapa och lägga till html element i DOM:en när informationen har hämtats. Till exempel använder jag document.createElement för att skapa element. Jag använder också appendchild för att lägga till elementen i rätt delar av html sidan. Jag använder addeventlistener för att reagera på användarens interaktioner. Exempelvis använder jag klickhändelser för knapparna som visar och döljer information i about sidan och för knappen som växlar mellan ljust och mörkt läge. Jag använder händelser eftersom sidan ska kunna reagera på vad besökaren gör.
+
+Jag försökte använda samma typ av html element i Javascript som jag använde när jag skrev html koden. Så den största skillnaden i html blir texten.
+
+Jag hade gjort flera färgvärden för ljust och mörkt läge i u01. När besökaren klickar på knappen ändrar Javascript vilket tema som är aktivt. Med css variablerna gör att till exempel textfärger och bakrundfärger ändras på hela sidan. Jag sparar temat i localstorage, så att det inte återställs till ljust läge när man går vidare till en annan sida. Om jag hade skrivit alla färger direkt i Javascript hade det blivit svårare att underhålla koden och jag hade behövt ändra färger på flera ställen istället för att bara ändra css.
+
+Som jag sa innan så finns en laddningstext som visas medan projekten hämtas från github vilket ger besökaren information om att sidan arbetar istället för att bara visa en tom sida. Om något går fel använder jag try och catch för att fånga upp felet. Jag har också en funktion som visar ett felmeddelande på sidan så att man förstår att projekten inte kunde hämtas. Om det inte finns någon beskrivning på projektet i repot så kommer det stå no description available istället och så kommer det bara fram en live preview länk om det finns en i repot.
+
+En sak jag gillade var att man kan växla temat med en knapp istället för att det bara känner av vilket tema man har, vilket jag hade lagt till i u01. Jag tycker också det blev bra hur javascripten är uppdelat i funktioner, det känns lättare att läsa och ändra det. Om jag hade haft mer tid hade jag velat förbättra felhanteringen ytterligare. Jag hade också velat testa sidan mer med olika typer av svar från API:et till exempel om det inte finns några projekt.
+
+Jag har använt AI som ett hjälpmedel framför allt för att bättre kunna förstå Javascript och få reda på fler funkioner som finns i javascript. Exempelvis har jag använt AI för att skapa dummy CV till json filen. AI har fungerat som ett stöd för att lösa problem till exempel för att kunna få projekt länkarna att fungera, men jag har själv behövt gå igenom och anpassa koden så den fungerar.
